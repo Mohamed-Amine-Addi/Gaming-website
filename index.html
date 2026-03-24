@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title> Amine Gaming WebSite</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+            <a href="#home" class="logo-link">
+                <div class="logo"><span>Amine</span>GamingStore</div>
+            </a>
+            <ul class="catalog">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#catalog">Catalog</a></li>
+                <li><a href="#about_us">About Us</a></li>
+                <li><a href="#comment_section">Comments</a></li>
+                <li><a href="#pre-order">Pre-order</a></li>
+            </ul>
+        </header>
+        
+
+        <!-- section acceuil home -->
+
+        <section id="home">
+            <div class="left">
+                <h4>Our new game</h4>
+                <h1> Resident Evil 9 </h1>
+                <p>Dual Camera Perspectives, Classic RE Core Mechanics, Exploration & Environment.</p>
+                <button><a href="#">Buy Now</a></button>
+            </div>
+            <div class="right">
+                <img src="images/rese.png">
+            </div>
+        </section>
+
+        <!-- section acceuil catalog -->
+
+        <section id="catalog">
+            <h4 class="mini_title">Our Special Catalog</h4>
+            <h2 class="title">Best Games</h2>
+            <div class="games">
+                <div class="game">
+                    <img src="images/fc.png">
+                    <p>Fc 26</p>
+                    <h2>450MAD</h2>
+                    <a href="javascript:void(0)" class="buy-btn" onclick="openBuyModal(this)">Buy</a>
+                </div>
+                <div class="game">
+                    <img src="images/fire.png">
+                    <p>Firewatch</p>
+                    <h2>1100MAD</h2>
+                    <a href="javascript:void(0)" class="buy-btn" onclick="openBuyModal(this)">Buy</a>
+                </div>
+                <div class="game">
+                    <img src="images/nba26.png">
+                    <p>Nba 2K26</p>
+                    <h2>195MAD</h2>
+                    <a href="javascript:void(0)" class="buy-btn" onclick="openBuyModal(this)">Buy</a>
+                </div>
+                <div class="game">
+                    <img src="images/ghost.png">
+                    <p>Ghost of Yōtei</p>
+                    <h2>500MAD</h2>
+                    <a href="javascript:void(0)" class="buy-btn" onclick="openBuyModal(this)">Buy</a>
+                </div>
+                <div class="game">
+                    <img src="images/cyberpunk.png">
+                    <p>Cyberpunk 2077</p>
+                    <h2>399MAD</h2>
+                    <a href="javascript:void(0)" class="buy-btn" onclick="openBuyModal(this)">Buy</a>
+                </div>
+                <div class="game">
+                    <img src="images/grand.png">
+                    <p>Grand Theft Auto V</p>
+                    <h2>300MAD</h2>
+                    <a href="javascript:void(0)" class="buy-btn" onclick="openBuyModal(this)">Buy</a>
+                </div>
+                
+
+            </div>
+        </section>
+
+        <!-- section about us -->
+
+        <section id="about_us">
+            <h4 class="mini_title">About us</h4>
+            <h2 class="title">Why are we number one ?</h2>
+            <div class="about">
+                <div class="left">
+                    <img src="images/web.jpg">
+                </div>
+                <div class="right">
+                    <h3>Level Up Your Gaming Experience</h3>
+                    <p>Our online video game store was created by passionate gamers for passionate gamers. We pride ourselves on offering a comprehensive selection of the latest releases, classic titles, gaming consoles, and high-quality accessories, ensuring that every player finds exactly what they need. Our website is designed to be user-friendly and visually engaging, making it easy to explore, compare, and purchase games with confidence. We provide detailed product descriptions, trailers, and reviews so you can make informed decisions.</p>
+                    <p>With secure payment options, fast shipping, and responsive customer support, we aim to make every gaming experience seamless and enjoyable. Whether you’re a casual player, a collector, or a competitive gamer, we are committed to delivering convenience, quality, and excitement directly to your screen.</p>
+                    <button><a href="#contact-footer">Learn more</a></button>
+                </div>
+            </div>
+        </section>
+
+        <!-- section comments -->
+        <section id="comment_section">
+            <h2 class="title">What people think about us ?</h2>
+            <div class="add-comment">
+                <h3>Leave a Comment</h3>
+                <form id="comment-form">
+                    <textarea id="user-comment" placeholder="Write your comment here..." required></textarea>
+                    <div class="user-details">
+                        <input type="text" id="user-name" placeholder="Full Name" required>
+                        <input type="email" id="user-email" placeholder="Email Address" required>
+                    </div>
+                    <button type="submit">Post Comment</button>
+                </form>
+            </div>
+            <div class="comments">
+                <div class="comment">
+                    <div>
+                        <img src="images/im.png">
+                        <h4>Ahmed Ahmed</h4>
+                    </div>
+                    <p>Easy navigation, smooth checkout...</p>
+                </div>
+            </div>
+            <div id="comment-toast" class="toast">Comment added successfully! </div>
+        </section>
+
+
+        <!-- section pre-order -->
+
+        <section id="pre-order"> 
+            <h4 class="mini_title">Pre-order</h4>
+            <h2 class="title">Fill this form to make a pre-order</h2>
+            <form id="preorder-form">
+                <label> Your Full Name</label>
+                <input type="text">
+                <label> Your Phone Number</label>
+                <input type="text">
+                <label>Select the Game</label>
+                <select required>
+                      <option value="" disabled selected>Choose a game...</option>
+                      <option value="GTA6">GTA 6</option>
+                      <option value="Pragmanta">Pragmanta</option>
+                      <option value="Forza Horizon6">Forza Horizon 6</option>
+                      <option value="007First Light">007 First Light</option>
+                      <option value="Marvels Wolverine">Marvel’s Wolverine</option>
+                </select>
+                <label> Your Email</label>
+                <input type="text">
+                <label> Your Plateform</label>
+                <select required>
+                      <option value="" disabled selected>Choose a platform...</option>
+                      <option value="Pc">Pc</option>
+                      <option value="xbox">Xbox series</option>
+                      <option value="ps5">Play Station</option>
+                      <option value="switch">Nintendo Switch</option>
+                </select>
+                <label> payment Method</label>
+                <select required>
+                      <option value="" disabled selected>Choose payment methodt...</option>
+                      <option value="credit_card">Credit Card</option>
+                      <option value="paypal">Paypal</option>
+                      <option value="crypto">Crypto</option>
+                      <option value="cash">Cash on delivery</option>
+                </select>
+                <label> Pre-order Date</label>
+                <input type="date">
+                <input type="submit" value="Make the pre-order">
+            </form>
+        </section>
+        <div id="toast-notification" class="toast">
+    Pre-ordered with success! 
+</div>
+
+        <!-- footer-->
+
+        <footer id="contact-footer">
+            <div class="services_list">
+                <div class="service">
+                    <img src="images/clock.png" alt="">
+                    <h2>Openning</h2>
+                    <p>9h30 to 13h45</p>
+                    <p>15h00 to 19h30</p>
+                </div>
+                <div class="service">
+                    <img src="images/loc.png" alt="">
+                    <h2>Address</h2>
+                    <p>Morocco</p>
+                    <p>Casablanca</p>
+                </div>
+                <div class="service">
+                    <img src="images/email.png" alt="">
+                    <h2>Email</h2>
+                    <p>amineegamingshop@gmail.com</p>
+                </div>
+                <div class="service">
+                    <img src="images/call.png" alt="">
+                    <h2>Contact Us</h2>
+                    <p>+212 606066065</p>
+                    <p>+212 521212121</p>
+                </div>
+                <hr>
+            </div>
+            <p class="footer_text">Looking for more <span>Video Games</span> ? Visit our store!</p>
+        </footer>
+        <div id="buy-modal" class="modal-overlay">
+            <div class="modal-content">
+                <span class="close-modal">&times;</span>
+                <div id="step-1">
+                    <img id="modal-game-img" src="" alt="Game preview" style="width: 200px; height: auto; margin-bottom: 15px; border-radius: 10px;">
+                    <h3 style="color:purple;">Confirm Your Purchase</h3>
+                    <p>You are buying: <span id="modal-game-name" style="font-weight: bold;"></span></p>
+                    <p id="modal-game-price" style="font-size: 22px; color: purple; font-weight: 800; margin: 15px 0;"></p>
+                    <div class="modal-actions">
+                        <button type="button" id="btn-to-step-2" class="btn-confirm">Yes, Buy Now</button>
+                        <button type="button" class="btn-cancel">Cancel</button>
+                    </div>
+                </div>
+                <div id="step-2" style="display: none;">
+                    <h3 style="color:purple;">Shipping Details</h3>
+                    <form id="purchase-form">
+                        <input type="text" placeholder="Full Name" required class="modal-input">
+                        <input type="email" placeholder="Email Address" required class="modal-input">
+                        <input type="tel" placeholder="Phone Number" required class="modal-input">
+                        <input type="text" placeholder="Shipping Address" required class="modal-input">
+                        <select required class="modal-input">
+                            <option value="" disabled selected>Payment Method</option>
+                            <option value="card">Credit Card</option>
+                            <option value="paypal">PayPal</option>
+                            <option value="cod">Cash on Delivery</option>
+                        </select>
+                        <div class="modal-actions">
+                            <button type="submit" class="btn-confirm">Confirm Order</button> 
+                            <button type="button" id="btn-back-to-1" class="btn-cancel">Back</button>
+                          </div>
+                    </form>
+                </div>
+            </div>
+         </div>
+       <script src="fich.js"></script>
+
+        
+    </body>
+</html>
